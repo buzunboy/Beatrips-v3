@@ -15,6 +15,9 @@
 		B01206801F2C9F8900BCCB10 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B012067D1F2C9F8900BCCB10 /* iCarousel.m */; };
 		B01206811F2C9F8900BCCB10 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B012067F1F2C9F8900BCCB10 /* Info.plist */; };
 		B01206841F2CA34800BCCB10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B01206831F2CA34800BCCB10 /* GoogleService-Info.plist */; };
+		B0D4DC5B1F2E0BC80065C443 /* dummyImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B0D4DC5A1F2E0BC80065C443 /* dummyImage.jpeg */; };
+		B0D4DC631F2E124B0065C443 /* EventsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D4DC621F2E124B0065C443 /* EventsView.xib */; };
+		B0D4DC651F2E12B80065C443 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4DC641F2E12B80065C443 /* EventsView.swift */; };
 		B0E1E3F21F2E077800B59F4C /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1E3EC1F2E077800B59F4C /* EventsDetailViewController.swift */; };
 		B0E1E3F31F2E077800B59F4C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1E3ED1F2E077800B59F4C /* EventsViewController.swift */; };
 		B0E1E3F41F2E077800B59F4C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E1E3EE1F2E077800B59F4C /* MessagesViewController.swift */; };
@@ -39,6 +42,9 @@
 		B012067F1F2C9F8900BCCB10 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B01206821F2C9FA500BCCB10 /* Beatrips_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beatrips_Bridging_Header.h; sourceTree = "<group>"; };
 		B01206831F2CA34800BCCB10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B0D4DC5A1F2E0BC80065C443 /* dummyImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dummyImage.jpeg; path = Images/dummyImage.jpeg; sourceTree = "<group>"; };
+		B0D4DC621F2E124B0065C443 /* EventsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsView.xib; sourceTree = "<group>"; };
+		B0D4DC641F2E12B80065C443 /* EventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		B0E1E3EC1F2E077800B59F4C /* EventsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsDetailViewController.swift; path = ViewControllers/EventsDetailViewController.swift; sourceTree = "<group>"; };
 		B0E1E3ED1F2E077800B59F4C /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = ViewControllers/EventsViewController.swift; sourceTree = "<group>"; };
 		B0E1E3EE1F2E077800B59F4C /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagesViewController.swift; path = ViewControllers/MessagesViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +99,11 @@
 		B01206651F2C9DC600BCCB10 /* beatrips */ = {
 			isa = PBXGroup;
 			children = (
+				B0D4DC5C1F2E0BCE0065C443 /* Images */,
 				B0E1E3F81F2E07D800B59F4C /* View Controllers */,
 				B01206661F2C9DC600BCCB10 /* AppDelegate.swift */,
 				B012066C1F2C9DC600BCCB10 /* Main.storyboard */,
+				B0D4DC611F2E11590065C443 /* Nibs */,
 				B012066F1F2C9DC600BCCB10 /* Assets.xcassets */,
 				B01206711F2C9DC600BCCB10 /* LaunchScreen.storyboard */,
 				B01206741F2C9DC600BCCB10 /* Info.plist */,
@@ -113,6 +121,23 @@
 				B012067F1F2C9F8900BCCB10 /* Info.plist */,
 			);
 			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		B0D4DC5C1F2E0BCE0065C443 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0D4DC5A1F2E0BC80065C443 /* dummyImage.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B0D4DC611F2E11590065C443 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				B0D4DC621F2E124B0065C443 /* EventsView.xib */,
+				B0D4DC641F2E12B80065C443 /* EventsView.swift */,
+			);
+			name = Nibs;
 			sourceTree = "<group>";
 		};
 		B0E1E3F81F2E07D800B59F4C /* View Controllers */ = {
@@ -203,9 +228,11 @@
 			files = (
 				B01206811F2C9F8900BCCB10 /* Info.plist in Resources */,
 				B01206731F2C9DC600BCCB10 /* LaunchScreen.storyboard in Resources */,
+				B0D4DC5B1F2E0BC80065C443 /* dummyImage.jpeg in Resources */,
 				B01206841F2CA34800BCCB10 /* GoogleService-Info.plist in Resources */,
 				B01206701F2C9DC600BCCB10 /* Assets.xcassets in Resources */,
 				B012066E1F2C9DC600BCCB10 /* Main.storyboard in Resources */,
+				B0D4DC631F2E124B0065C443 /* EventsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +301,7 @@
 				B012067B1F2C9E4600BCCB10 /* HomeViewController.swift in Sources */,
 				B0E1E3F71F2E077800B59F4C /* VenuesViewController.swift in Sources */,
 				B0E1E3F31F2E077800B59F4C /* EventsViewController.swift in Sources */,
+				B0D4DC651F2E12B80065C443 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

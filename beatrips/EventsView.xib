@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="17A291j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsView" customModule="beatrips" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventsView" customModule="beatrips" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2C-iG-m3y">
+                    <rect key="frame" x="8" y="180" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="15u-IA-0Lk"/>
+                        <constraint firstAttribute="width" constant="50" id="Rdq-3o-2FU"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GST-7g-pbx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="MhT-7p-0Z1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52l-P5-XbC">
+                    <rect key="frame" x="66" y="180" width="296" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aAa-6n-OXC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhX-mO-Tav">
+                    <rect key="frame" x="66" y="218" width="296" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="ISu-1X-TfF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvg-X4-AbC">
+                    <rect key="frame" x="66" y="201" width="296" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="Rz1-IB-gwM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GST-7g-pbx" secondAttribute="trailing" id="ARd-6p-U1i"/>
+                <constraint firstItem="vvg-X4-AbC" firstAttribute="top" secondItem="52l-P5-XbC" secondAttribute="bottom" id="BmT-ug-oPs"/>
+                <constraint firstItem="F2C-iG-m3y" firstAttribute="top" secondItem="GST-7g-pbx" secondAttribute="bottom" constant="5" id="Ddc-bJ-o44"/>
+                <constraint firstItem="52l-P5-XbC" firstAttribute="top" secondItem="GST-7g-pbx" secondAttribute="bottom" constant="5" id="FXP-pp-3Za"/>
+                <constraint firstAttribute="trailing" secondItem="52l-P5-XbC" secondAttribute="trailing" constant="13" id="HSp-qC-cgP"/>
+                <constraint firstItem="WhX-mO-Tav" firstAttribute="leading" secondItem="F2C-iG-m3y" secondAttribute="trailing" constant="8" id="Q1R-hg-WGI"/>
+                <constraint firstItem="vvg-X4-AbC" firstAttribute="leading" secondItem="F2C-iG-m3y" secondAttribute="trailing" constant="8" id="T8L-Ze-CZ0"/>
+                <constraint firstItem="WhX-mO-Tav" firstAttribute="leading" secondItem="F2C-iG-m3y" secondAttribute="trailing" constant="8" id="YMd-Pu-5Qk"/>
+                <constraint firstAttribute="bottom" secondItem="WhX-mO-Tav" secondAttribute="bottom" constant="5" id="YgH-5J-ifa"/>
+                <constraint firstAttribute="trailing" secondItem="WhX-mO-Tav" secondAttribute="trailing" constant="13" id="YlT-9L-byg"/>
+                <constraint firstAttribute="bottom" secondItem="F2C-iG-m3y" secondAttribute="bottom" constant="10" id="acB-Xi-yx2"/>
+                <constraint firstItem="52l-P5-XbC" firstAttribute="top" secondItem="GST-7g-pbx" secondAttribute="bottom" constant="5" id="fAJ-Vb-aEK"/>
+                <constraint firstItem="WhX-mO-Tav" firstAttribute="top" secondItem="vvg-X4-AbC" secondAttribute="bottom" id="fiL-Ko-24F"/>
+                <constraint firstAttribute="trailing" secondItem="vvg-X4-AbC" secondAttribute="trailing" constant="13" id="hgz-fE-KCv"/>
+                <constraint firstItem="GST-7g-pbx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l8o-28-LrQ"/>
+                <constraint firstItem="vvg-X4-AbC" firstAttribute="top" secondItem="52l-P5-XbC" secondAttribute="bottom" id="lUf-56-6ou"/>
+                <constraint firstItem="GST-7g-pbx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nHw-54-Iao"/>
+                <constraint firstItem="WhX-mO-Tav" firstAttribute="top" secondItem="vvg-X4-AbC" secondAttribute="bottom" id="oh1-vn-JgP"/>
+                <constraint firstItem="52l-P5-XbC" firstAttribute="leading" secondItem="F2C-iG-m3y" secondAttribute="trailing" constant="8" id="xNL-7l-fkE"/>
+                <constraint firstItem="F2C-iG-m3y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="yH0-R6-5d7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="eventDate" destination="vvg-X4-AbC" id="52b-mq-NEf"/>
+                <outlet property="eventImage" destination="GST-7g-pbx" id="Z7q-vD-ilI"/>
+                <outlet property="eventName" destination="52l-P5-XbC" id="y7c-p4-tby"/>
+                <outlet property="venueImage" destination="F2C-iG-m3y" id="mbA-zm-dLA"/>
+                <outlet property="venueName" destination="WhX-mO-Tav" id="qde-xD-2yN"/>
+            </connections>
+            <point key="canvasLocation" x="79.5" y="26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dummyImage.jpeg" width="1006" height="526"/>
+    </resources>
+</document>
